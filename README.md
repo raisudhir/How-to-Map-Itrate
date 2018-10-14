@@ -15,10 +15,10 @@ public class MapItrate {
 		map.put(2, "Sudhir");
 		map.put(5, "Sudhir");
 
-		/*
-		 * for(Map.Entry<Integer, String> entry : map.entrySet()) {
-		 * System.out.println(entry.getKey()+":"+entry.getValue()); }
-		 */
+		//using for loop
+		 for(Map.Entry<Integer, String> entry : map.entrySet()) {
+		 System.out.println(entry.getKey()+":"+entry.getValue()); }
+		 //using Iterator
 		Iterator<Map.Entry<Integer, String>> itr = map.entrySet().iterator();
 		while(itr.hasNext()) {
 			Map.Entry<Integer, String> entry=itr.next();
